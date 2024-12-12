@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto py-8 text-center">
+    <h1 class="text-3xl font-bold mb-4">Thank You for Your Order!</h1>
+    <p class="mb-4">Your order has been received and is being processed.</p>
+    <p>Order Total: $<%= order.total.toFixed(2) %></p>
+    <a href="/products" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 inline-block mt-4">
+      Continue Shopping
+    </a>
+  </div>
+</body>
+</html> 
